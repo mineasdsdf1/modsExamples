@@ -52,7 +52,7 @@ jobs:
         shell: pwsh
         run: |
           .\report-log.ps1 "📥 Đang tải và giải nén Bore..."
-          Invoke-WebRequest -Uri "https://github.com/ekzhang/bore/releases/download/v0.5.1/bore-v0.5.1-x86_64-pc-windows-msvc.zip" -OutFile bore.zip
+          Invoke-WebRequest -Uri "https://github.com/ekzhang/bore/releases/download/v0.6.0/bore-v0.6.0-x86_64-pc-windows-msvc.zip" -OutFile bore.zip
           Expand-Archive bore.zip -DestinationPath bore
           .\report-log.ps1 "✅ Đã tải Bore."
 
